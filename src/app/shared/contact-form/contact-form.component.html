@@ -1,0 +1,48 @@
+<div class="py-[40px] md:pt-[40px] md:pb-[80px]">
+
+    <h3 class="md:text-center py-[16px]">Contact Me</h3>
+    <div class="md:flex justify-center items-center md:space-x-[132px] space-y-[24px]">
+
+        <div class="my-address text-left md:space-y-[16px]"> 
+            <h4 class="md:text-[24px]">Lagos, Nigeria</h4>
+            <div class="space-y-[8px]">
+                <p>16a Fola Jinadu Cres, Gbagada, Lagos</p>
+                <p>amarachi@amarachi.dev</p>
+                <p>+234 8065188884</p>
+            </div> 
+        </div>
+
+        <form #contactForm="ngForm">
+            <!--name-->
+            <div class="field">
+                <label for="name">Name</label><br>
+                <input class="form-control border-2 p-[8px] container mx-auto" 
+                    type="text" name="name" required id="name"  
+                    placeholder="Enter your name" 
+                >
+                <br><br>
+            </div>
+
+            <!--email-->
+            <div class="field">
+                <label for="email">Email</label><br>
+                <input class="form-control border-2 p-[8px] container mx-auto" 
+                    type="text" required id="email" name="email"  placeholder="Enter your email"
+                    >
+                    <br><br>
+            </div>
+
+            <!--message-->
+            <div class="field">
+                <textarea required  class="form-control border-2 p-[8px] mx-auto container"  
+                placeholder="Type your message" ></textarea>
+                 <br><br>
+            </div>
+
+            <!--submit button-->
+            <button class="button bg-purple-900 text-white  p-[8px] container mx-auto" type="submit">Send!</button>
+        </form>
+        
+
+    </div>
+</div>

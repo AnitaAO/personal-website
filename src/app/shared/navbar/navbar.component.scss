@@ -1,0 +1,36 @@
+.navbar{
+    padding: 8px 16px;
+}
+
+.nav-box{
+    margin: o;
+    align-content: center;
+}
+
+nav a{
+    color: #581C87;
+    font-weight:500;
+    position: relative;
+}
+    
+@media (min-width: 641px) {
+    nav a{
+        color:#2a2a2a;
+        font-weight:500;
+        position: relative;
+    }
+    
+}
+
+nav a:hover::after, .desktop-menu a.is-active::after{
+    content: '';
+    position: absolute;
+    background: #BB80AC;
+    height: 4px;
+    left: 1px;
+    right: -3px;
+    bottom: 0;
+    z-index: -1;
+
+}
+
