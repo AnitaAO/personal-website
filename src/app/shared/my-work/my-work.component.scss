@@ -1,0 +1,77 @@
+h4 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .how-it-cards {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .it-works {
+    background-color: #F8F8F8;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+    position: relative;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 41px;
+  }
+  
+  .ring {
+    position: absolute;
+    top: 19%;
+    left: 11%;
+    z-index: -1;
+  }
+  
+  .swirle {
+    position: absolute;
+    z-index: -1;
+    right: 10%;
+    top: 25%;
+    height: 416px;
+  }
+  
+  .triangle {
+    position: absolute;
+    z-index: -1;
+    bottom: -20px;
+    width: 90px;
+    left: 30%;
+  }
+  
+  .bs {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 992px) {
+    .circle {
+      width: 28px;
+    }
+  
+    .ring {
+      top: 15%;
+      left: 3%;
+      width: 31%;
+    }
+  
+    .triangle {
+      left: 20px;
+    }
+  }
+  
