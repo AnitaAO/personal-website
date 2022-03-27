@@ -22,6 +22,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { PortfolioHeroComponent } from './shared/portfolio-hero/portfolio-hero.component';
 import { ResumeComponent } from './shared/resume/resume.component';
 import { SkillSetsComponent } from './shared/skill-sets/skill-sets.component';
+import { MyCardComponent } from './shared/my-card/my-card.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { SkillSetsComponent } from './shared/skill-sets/skill-sets.component';
     NavbarComponent,
     PortfolioHeroComponent,
     ResumeComponent,
-    SkillSetsComponent
+    SkillSetsComponent,
+    MyCardComponent
   ],
   imports: [
     BrowserModule,
