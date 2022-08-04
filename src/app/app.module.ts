@@ -17,7 +17,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HireMeComponent } from './shared/hire-me/hire-me.component';
 import { HomeHeroComponent } from './shared/home-hero/home-hero.component';
 import { HomeServicesComponent } from './shared/home-services/home-services.component';
-import { MyWorkComponent } from './shared/my-work/my-work.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { PortfolioHeroComponent } from './shared/portfolio-hero/portfolio-hero.component';
 import { ResumeComponent } from './shared/resume/resume.component';
@@ -40,7 +39,6 @@ import { SkillSetsComponent } from './shared/skill-sets/skill-sets.component';
     HireMeComponent,
     HomeHeroComponent,
     HomeServicesComponent,
-    MyWorkComponent,
     NavbarComponent,
     PortfolioHeroComponent,
     ResumeComponent,
