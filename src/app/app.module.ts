@@ -1,3 +1,4 @@
+import { HomeHeroModule } from './shared/home-hero/homehero.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule} from '@angular/forms'
@@ -46,13 +47,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     PortfolioHeroComponent,
     ResumeComponent,
     SkillSetsComponent,
-
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    HomeHeroModule
 
   ],
   providers: [],

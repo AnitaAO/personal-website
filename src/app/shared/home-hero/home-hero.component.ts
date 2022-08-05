@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class HomeHeroComponent  {
 
   imageUrl = "assets/images/me.png"
+  text = "A multidisciplinary and talented Nigerian based in Lagos."
 
   constructor() { }
 

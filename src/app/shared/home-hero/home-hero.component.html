@@ -1,35 +1,28 @@
-<section class="home-hero">
-    <div >
+<div class="home-hero">
+  <div class=" hero-box container mx-auto md:justify-center items-center space-y-[16px] md:space-x-[24px] md:flex md:mt-[100px] mt-[70px] ">
 
-      <div class=" hero-box container mx-auto md:justify-center items-center space-y-[16px] md:space-x-[24px] md:flex md:mt-[100px] mt-[70px] ">
+    <!--my headshot is here-->
+    <img class="object-center mx-auto w-auto md:w-[304px]" src="{{ imageUrl }}" alt="photograph">
 
-        <!--my headshot is here-->
-        <img class="object-center mx-auto w-auto md:w-[304px]" src="{{ imageUrl }}" alt="Amarachi">
-
-        <!--introducing myself-->
-        <div class="space-y-[16px] md:space-y-[24px]">
-          <div class="space-y-[8px] items-center">
-            <h6 class="bg-clip-text text-transparent bg-gradient-to-r from-[#BB80AC] to-[#581C87]">Hi there!</h6>
-            <h5>I'm Amarachi,</h5>
-            <h3>a UI/UX Designer & Front-end Developer</h3>
-            <p>A multidisciplinary and talented Nigerian based in Lagos. </p>
-            <div class="flex font-medium space-x-[8px]">
-              <p class="-mt-[6px]">Read more</p>
-              <em class=" fa fa-caret-right"></em>
-            </div>
-          </div>
-
-          <div>
-            <p class="flex flex-inline justify-between items-center px-[8px] py-[8px] mx-auto text-[16px] text-[#c4c4c4] border-[4px] rounded-[8px] shadow-md bg-white" >Type your message here
-              <button class="text-white px-[16px] bg-purple-900 py-[8px] rounded-[8px] " type="button"
-              >Send!</button>
-            </p>
-            <a ></a>
-          </div>
+    <!--introducing myself-->
+    <div class="space-y-[16px] md:space-y-[24px]">
+      <div class="space-y-[8px] items-center pb-[24px]">
+        <h3 class="bg-clip-text text-transparent bg-gradient-to-r from-[#BB80AC] to-[#581C87]">Hi there!</h3>
+        <h4>I'm Amarachi,</h4>
+        <h4>a UI/UX Designer & Front-end Developer</h4>
+        <p>{{ text | summary:10 }}</p>
+        <div class="flex font-medium space-x-[8px] pointer">
+          <a href="/about">Read more
+            <em class=" fa fa-caret-right"></em>
+          </a>
         </div>
-
       </div>
+
+      <span class="outline py-[16px] pl-[16px] pr-[8px] text-#c4c4c4 rounded-[8px] shadow-md bg-white">
+        <input class="text-[16px] text-[#c4c4c4]" placeholder="Type your message" >
+        <button class="text-white px-[16px] bg-purple-900 py-[8px] rounded-[8px]">Send!</button>
+      </span>
     </div>
-  </section>
 
-
+  </div>
+</div>
