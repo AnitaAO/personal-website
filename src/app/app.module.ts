@@ -22,6 +22,9 @@ import { PortfolioHeroComponent } from './shared/portfolio-hero/portfolio-hero.c
 import { ResumeComponent } from './shared/resume/resume.component';
 import { SkillSetsComponent } from './shared/skill-sets/skill-sets.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -49,6 +52,8 @@ import { SkillSetsComponent } from './shared/skill-sets/skill-sets.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
