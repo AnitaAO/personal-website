@@ -119,12 +119,9 @@
               <div>
                 <h6>Job Description:</h6>
                 <ul>
-                  <li> {{ pharezTech.one }}</li>
-                  <li> {{ pharezTech.two }} </li>
-                  <li> {{ pharezTech.three }} </li>
-                  <li> {{ pharezTech.four }} </li>
-                  <li> {{ pharezTech.five }} </li>
-                  <li> {{ pharezTech.six }} </li>
+                  <li *ngFor="let phareztech of phareztechs">
+                    {{phareztech.job}}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -150,10 +147,9 @@
               <div>
                 <h6>Job Description:</h6>
                 <ul >
-                  <li>{{ createSol.one }}</li>
-                  <li>{{ createSol.two }}</li>
-                  <li>{{ createSol.three }}</li>
-                  <li>{{ createSol.four }}</li>
+                  <li *ngFor="let createsolution of createsolutions">
+                    {{ createsolution.job }}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -179,15 +175,9 @@
                 >
               </p>
               <div>
-                <p>Job Description:</p>
+                <p>Job job:</p>
                 <ul>
-                  <li>{{ lepsta.one }}</li>
-                  <li>{{ lepsta.two }}</li>
-                  <li>{{ lepsta.three }}</li>
-                  <li>{{ lepsta.four }}</li>
-                  <li>{{ lepsta.five }}</li>
-                  <li>{{ lepsta.six }}</li>
-                  <li>{{ lepsta.seven }}</li>
+                  <li *ngFor="let lepsta of lepstas">{{ lepsta.job }}</li>
                 </ul>
               </div>
             </div>
@@ -213,11 +203,9 @@
               <div>
                 <p>Job Description:</p>
                 <ul>
-                  <li>{{ techville.one }}</li>
-                  <li>{{ techville.two }}</li>
-                  <li>{{ techville.three }}</li>
-                  <li>{{ techville.four }}</li>
-                  <li>{{ techville.five }}</li>
+                  <li *ngFor="let techville of techvilles">
+                    {{ techville.job }}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -248,8 +236,5 @@
         </div>
       </div>
     </div>
-  </div>
-  <div>
-    <div></div>
   </div>
 </div>
