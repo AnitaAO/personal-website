@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  imageUrl = "assets/images/logopurple.png"
+
   mobileMenu: boolean = false;
- 
+
   toggleMenu() {
     this.mobileMenu=!this.mobileMenu
   }

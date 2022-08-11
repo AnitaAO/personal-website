@@ -1,13 +1,13 @@
 <div class="px-[16px]">
   <div class="container max-w-6xl mx-auto m-[24px] md:mb-[40px] py-[24px] md:py-[40px] space-y-[8px]">
 
-    <h3 class="font-bold md:text-center">Hire Me For</h3>
+    <h3 class="font-bold md:text-center">{{hire.title}}</h3>
 
     <div class="items-center space-y-[16px] md:p-[16px]">
       <div>
         <div class="flex space-x-[8px] md:space-x-[16px]">
           <em class="fa fa-graduation-cap"></em>
-          <h5 class="font-bold">Visual & User experience design</h5>
+          <h5 class="font-bold">{{hire.visual.subtitle}}</h5>
         </div>
 
         <div class="flex space-x-[8px] md:space-x-[16px] relative">
@@ -15,30 +15,27 @@
             <span class="line-1a rotate-90 absolute"></span>
             <span class="line-1b rotate-90 absolute md:hidden"></span>
           </div>
-          <p class="pl-[18px]">I help product owners prioritize contents on web pages and design digital products that
-            offer great experience to the users.</p>
+          <p class="pl-[18px]">{{hire.visual.description}}</p>
         </div>
       </div>
 
       <div>
         <div class="flex space-x-[8px] md:space-x-[16px]">
           <em class="fa fa-graduation-cap"></em>
-          <h5 class="font-bold">Mentorship</h5>
+          <h5 class="font-bold">{{hire.mentorship.subtitle}}</h5>
         </div>
 
         <div class="flex space-x-[8px] md:space-x-[16px] relative">
           <span class="line-2a rotate-90 absolute"></span>
           <span class="line-2b rotate-90 absolute md:hidden"></span>
-          <p class="pl-[18px]">I help create and establish a creative environment for aspiring product designers, mentees,
-            organizations and individuals to work in an experimental environment that would in turn help
-            in improving their skills and enhance career goals thus growing the design industry progressively</p>
+          <p class="pl-[18px]"> {{hire.mentorship.description }} </p>
         </div>
       </div>
 
       <div>
         <div class="flex space-x-[8px] md:space-x-[16px]">
           <em class="fa fa-graduation-cap"></em>
-          <h5 class=" font-bold">Collaboration</h5>
+          <h5 class=" font-bold">{{hire.collaboration.subtitle}}</h5>
         </div>
 
         <div class="p-collabo flex space-x-[8px] md:space-x-[16px] relative">
@@ -46,8 +43,7 @@
             <span class="line-3a rotate-90 absolute"></span>
             <span class="line-3b rotate-90 absolute md:hidden"></span>
           </div>
-          <p class="pl-[18px]">Armed with the best approach that connects me to a team and their clients,
-            harmonizing work for a common goal working in line with the product design processes.</p>
+          <p class="pl-[18px]">{{hire.collaboration.description}}</p>
         </div>
       </div>
     </div>

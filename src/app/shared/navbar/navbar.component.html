@@ -1,51 +1,49 @@
 <nav class="navbar w-full bg-opacity-80 bg-purple-50 fixed top z-50 py-2 shadow-md  ">
-    <div class="container max-w-6xl mx-auto">
-      <div class="nav-box flex justify-between items-center bold">
-        
-        <div class="flex flex-inline items-center space-x-[4px]">
-          <img routerLink="/home" class="w-[40px] h-[40px]" src="assets/images/logopurple.png" alt="logo">
-          <span routerLink="/home" class="hover:text-purple-900 hidden md:inline">Amarachi Ajah</span>
+  <div class="container max-w-6xl mx-auto">
+    <div class="nav-box flex justify-between items-center bold">
+
+      <div class="flex flex-inline items-center space-x-[4px]">
+        <img routerLink="/home" class="w-[40px] h-[40px]" [src]="imageUrl" alt="logo">
+        <span routerLink="/home" class="hover:text-purple-900 hidden md:inline">Amarachi Ajah</span>
+      </div>
+
+      <menu>
+        <!--mobile button active is here-->
+        <div (click)="toggleMenu()" *ngIf="!mobileMenu" class="mobile button1 md:hidden">
+          <svg class="py-4 px-3 text-purple-300" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+           </svg>
         </div>
-  
-        <menu class="">
-          <!--mobile button active is here-->
-          <div (click)="toggleMenu()" *ngIf="!mobileMenu" class="mobile button1 md:hidden">
-            <svg class="py-4 px-3 text-purple-300" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-             </svg>
-          </div>
-  
-          <!--mobile button close is here-->
-          <div (click)="toggleMenu()" *ngIf="mobileMenu" class="mobile button2 md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </div>
-          
-          <!--main menu is here-->
-          <div class="dsktop-menu hidden md:inline-flex text-black bold space-x-4">
-              <a routerLink="/home" routerLinkActive="active">Home</a>
-              <a routerLink="/about" routerLinkActive="active" >About</a>
-              <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
-              <a routerLink="/contact-me" routerLinkActive="active">Contact me</a>
-          </div>
-        </menu>
-        <div>
-          <a routerLink="/portfolio" class="border-2 bg-purple-50 hover:bg-white 
-          transition-300 px-4 py-2 rounded-xl"><button class="button transition ease-in-out 
-          delay-150 hover:-translate-py-2 hover:scale-110" type="button">Case study</button></a>
+
+        <!--mobile button close is here-->
+        <div (click)="toggleMenu()" *ngIf="mobileMenu" class="mobile button2 md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
         </div>
+
+        <!--main menu is here-->
+        <div class="dsktop-menu hidden md:inline-flex text-black bold space-x-4">
+            <a routerLink="/home" routerLinkActive="active">Home</a>
+            <a routerLink="/about" routerLinkActive="active" >About</a>
+            <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+            <a routerLink="/contact-me" routerLinkActive="active">Contact me</a>
+        </div>
+      </menu>
+      <div>
+        <a routerLink="/portfolio" class="border-2 bg-purple-50 hover:bg-white
+        transition-300 px-4 py-2 rounded-xl"><button class="button transition ease-in-out
+        delay-150 hover:-translate-py-2 hover:scale-110" type="button">Case study</button></a>
       </div>
     </div>
-  
-    <!--mobile menu is here-->
-    <div *ngIf="mobileMenu" class="mobile-menu md:hidden space-y-2 text-[#2b2b2b] bold shadow-md py-2 ">
-      <a routerLink="/home" class="block px-4">Home</a>
-      <a routerLink="/about" class="block px-4">About</a>
-      <a routerLink="/portfolio" class="block px-4">Portfolio</a>
-      <a routerLink="/contact-me" class="block px-4">Contact me</a>
-      <a href="https://www.behance.net/amarachiajah" class="block px-4 py-[8px]"><button type="button" class="border-2 rounded-xl px-4 text-center">Case study</button></a>
-    </div>
-  
-  </nav>
-  <!--navbar ends here-->
+  </div>
+
+  <!--mobile menu is here-->
+  <div *ngIf="mobileMenu" class="mobile-menu md:hidden space-y-2 text-[#2b2b2b] bold shadow-md py-2 ">
+    <a routerLink="/home" class="block px-4">Home</a>
+    <a routerLink="/about" class="block px-4">About</a>
+    <a routerLink="/portfolio" class="block px-4">Portfolio</a>
+    <a routerLink="/contact-me" class="block px-4">Contact me</a>
+    <a href="https://www.behance.net/amarachiajah" class="block px-4 py-[8px]"><button type="button" class="border-2 rounded-xl px-4 text-center">Case study</button></a>
+  </div>
+</nav>
