@@ -5,3 +5,7 @@
 .alert{
     color: black;
 }
+
+.form-control.ng-dirty.ng-invalid.ng-touched{
+  border: 1px solid red;
+}

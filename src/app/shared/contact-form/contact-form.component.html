@@ -12,44 +12,52 @@
       </div>
     </div>
 
-    <form>
+    <form #f="ngForm" (ngSubmit)="submit(f)">
       <!--name-->
       <div class="field">
         <label for="name">Name</label><br />
         <input
-          class="form-control border-2 p-[8px] container mx-auto"
+          class="border-2 p-[8px] container mx-auto"
           type="text"
+          ngModel
           name="name"
+          #name="ngModel"
           required
           id="name"
           placeholder="Enter your name"
+          (change)="log(name)"
         />
+        <div class="text-red" *ngIf="name.touched && !name.valid">First name is required</div>
         <br /><br />
-      </div>
-
       <!--email-->
-      <div class="field">
         <label for="email">Email</label><br />
         <input
-          class="form-control border-2 p-[8px] container mx-auto"
+          ngModel
+          class="border-2 p-[8px] container mx-auto"
           type="text"
           required
           id="email"
           name="email"
+          #email="ngModel"
           placeholder="Enter your email"
+          (change)="log(email)"
         />
+        <div *ngIf="email.touched && !email.valid">Email is required</div>
         <br /><br />
       </div>
 
       <!--message-->
-      <div class="field">
         <textarea
+          ngModel
+          name="message"
           required
-          class="form-control border-2 p-[8px] mx-auto container"
+          type="textarea"
+          class="border-2 p-[8px] mx-auto container"
           placeholder="Type your message"
+          #textarea="ngModel"
         ></textarea>
+        <div *ngIf="textarea.touched && !textarea.valid">Your message cannot be empty</div>
         <br /><br />
-      </div>
 
       <!--submit button-->
       <button
