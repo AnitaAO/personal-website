@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,13 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  randomly darkModeSwitched = new EventEmitter<boolean>();
 
-  imageUrl = "assets/images/logopurple.png"
+  imageUrl = "assets/images/logowhite.png"
 
   mobileMenu: boolean = false;
 
-  toggleMenu() {
-    this.mobileMenu=!this.mobileMenu
+  iconStatus: boolean =false;
+
+  constructor() {
+  }
+
+  // clickEvent(){
+  //   this.iconStatus = !this.iconStatus
+  // }
+
+  // clickEvent({iconStatus}){
+  //   this.darkModeSwitched.emit()
+  // }
+
+  toggleMenu(){
+    this.mobileMenu = !this.mobileMenu
   }
 
 }

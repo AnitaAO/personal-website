@@ -24,6 +24,8 @@ import { ResumeComponent } from './shared/resume/resume.component';
 import { SkillSetsComponent } from './shared/skill-sets/skill-sets.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import {MyWorkComponent} from "./shared/my-work/my-work.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -47,13 +49,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     PortfolioHeroComponent,
     ResumeComponent,
     SkillSetsComponent,
+    MyWorkComponent,
   ],
-  
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HomeHeroModule
+    HomeHeroModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],

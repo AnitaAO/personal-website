@@ -1,16 +1,16 @@
-<nav class="navbar w-full bg-opacity-80 bg-purple-50 fixed top z-50 py-2 shadow-md  ">
+<nav class="dark:bg-dark-secondary-bg navbar w-full bg-opacity-80 bg-purple-50 fixed top z-50 py-2 shadow-md  ">
   <div class="container max-w-6xl mx-auto">
     <div class="nav-box flex justify-between items-center bold">
 
-      <div class="flex flex-inline items-center space-x-[4px]">
+      <a class="flex flex-inline items-center space-x-[4px]">
         <img routerLink="/home" class="w-[40px] h-[40px]" [src]="imageUrl" alt="logo">
-        <span routerLink="/home" class="hover:text-purple-900 hidden md:inline">Amarachi Ajah</span>
-      </div>
+        <span routerLink="/home" class=" hover:text-purple-900 hidden md:inline">Amarachi Ajah</span>
+      </a>
 
-      <menu>
+      <menu >
         <!--mobile button active is here-->
         <div (click)="toggleMenu()" *ngIf="!mobileMenu" class="mobile button1 md:hidden">
-          <svg class="py-4 px-3 text-purple-300" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="py-4 px-3 text-purple-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
            </svg>
         </div>
@@ -30,10 +30,23 @@
             <a routerLink="/contact-me" routerLinkActive="active">Contact me</a>
         </div>
       </menu>
-      <div>
-        <a routerLink="/portfolio" class="border-2 bg-purple-50 hover:bg-white
-        transition-300 px-4 py-2 rounded-xl"><button class="button transition ease-in-out
-        delay-150 hover:-translate-py-2 hover:scale-110" type="button">Case study</button></a>
+      <div class="togglediv">
+        <div class="pr-8">
+          <div routerLink="/portfolio" class=" portfolio-btn border-2 bg-purple-50
+            transition-300 px-4 py-2 rounded-xl">
+            <button class="button transition ease-in-out
+              delay-150 hover:-translate-py-2 hover:scale-110" type="button">Case study
+            </button>
+          </div>
+        </div>
+
+<!--        dark-mode icon is here-->
+        <div  >
+            <span >
+              <i *ngIf="!iconStatus" (change)="clickEvent($event)" class="fa fa-lightbulb-o fa-3x" style="color: yellow" ></i>
+              <i *ngIf="iconStatus" (change)="clickEvent($event)" class="fa fa-lightbulb-o fa-3x" style="color: black"></i>
+            </span>
+        </div>
       </div>
     </div>
   </div>

@@ -3,34 +3,47 @@
 }
 
 .nav-box{
-    margin: o;
+    margin: 0;
     align-content: center;
 }
 
 nav a{
-    color: #581C87;
+    //color: white;
     font-weight:500;
     position: relative;
 }
-    
+
+.togglediv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 @media (min-width: 641px) {
     nav a{
-        color:#2a2a2a;
+        //color:#2a2a2a;
         font-weight:500;
         position: relative;
     }
-    
+
 }
 
 nav a:hover::after, .desktop-menu a.is-active::after{
     content: '';
     position: absolute;
-    background: #BB80AC;
+    //background: #BB80AC;
     height: 4px;
     left: 1px;
     right: -3px;
     bottom: 0;
     z-index: -1;
-
 }
 
+
+
+//nav a .portfolio-btn:hover::after, .desktop-menu a.portfolio-btn.is-active::after{
+//  background: white;
+//  content: '';
+//}
