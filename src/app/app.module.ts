@@ -18,7 +18,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HireMeComponent } from './shared/hire-me/hire-me.component';
 import { HomeHeroComponent } from './shared/home-hero/home-hero.component';
 import { HomeServicesComponent } from './shared/home-services/home-services.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
 import { PortfolioHeroComponent } from './shared/portfolio-hero/portfolio-hero.component';
 import { ResumeComponent } from './shared/resume/resume.component';
 import { SkillSetsComponent } from './shared/skill-sets/skill-sets.component';
@@ -26,6 +25,13 @@ import { SkillSetsComponent } from './shared/skill-sets/skill-sets.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MyWorkComponent} from "./shared/my-work/my-work.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavigationComponent } from './shared/navigation/navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -45,11 +51,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HireMeComponent,
     HomeHeroComponent,
     HomeServicesComponent,
-    NavbarComponent,
     PortfolioHeroComponent,
     ResumeComponent,
     SkillSetsComponent,
     MyWorkComponent,
+    NavigationComponent,
   ],
 
   imports: [
@@ -57,7 +63,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FormsModule,
     HomeHeroModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
 
   ],
   providers: [],

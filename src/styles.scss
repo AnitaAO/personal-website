@@ -27,11 +27,26 @@ $personal-website-theme: mat.define-light-theme((
     warn: $personal-website-warn,
   )
 ));
+$personal-website-theme-dark: mat.define-dark-theme((
+  color: (
+    primary: $personal-website-primary,
+    accent: $personal-website-accent,
+    warn: $personal-website-warn,
+  )
+));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($personal-website-theme);
+// @include mat.all-component-themes($personal-website-theme-dark);
+
+
+.dark-theme {
+  @include mat.all-component-themes($personal-website-theme-dark);
+};
+.light-theme {
+  @include mat.all-component-themes($personal-website-theme);
+};
 
 /* You can add global styles to this file, and also import other style files */
 @tailwind base;

@@ -7,11 +7,11 @@ import {Component, HostBinding} from '@angular/core';
 })
 export class AppComponent {
 
-  private isDark:boolean = true
+  private isDark:boolean = true;
 
   @HostBinding('class')
 
    get themeMode(){
-     return this.isDark ? 'darkTheme' : 'lightTheme'
+     return this.isDark ? 'dark-theme' : 'light-theme';
    }
 }
