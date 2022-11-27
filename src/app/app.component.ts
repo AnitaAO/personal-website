@@ -1,17 +1,13 @@
-import {Component, HostBinding} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 
-  private isDark:boolean = true;
-
-  @HostBinding('class')
-
-   get themeMode(){
-     return this.isDark ? 'dark-theme' : 'light-theme';
-   }
+  ngOnInit() {
+  }
 }
