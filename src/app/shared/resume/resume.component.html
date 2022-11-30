@@ -1,240 +1,231 @@
-<div>
+<div
+  class="grid grid-cols-1 md:grid-cols-2 bg-[#fff] mt-[50px] md:space-x-[24px] justify-between items-start"
+>
   <div
-    class="grid grid-cols-1 md:grid-cols-2 md:space-x-[24px] justify-center items-start"
+    class=" space-y-[16px] md:space-y-[24px] px-[16px] py-[16px]"
   >
-    <div
-      class="bg-purple-50 space-y-[16px] md:space-y-[24px] px-[16px] py-[16px]"
-    >
-      <div class="flex space-x-[16px] items-center">
-        <em class="fa fa-graduation-cap"></em>
-        <h4 class="font-bold md:text-[24px]">Education</h4>
-      </div>
+    <div class="flex space-x-[16px] items-center">
+      <em class="fa fa-life-ring"></em>
+      <h4 class="font-bold text-[24px]">Work & Experience</h4>
+    </div>
 
-      <div class="space-y-[16px] md:space-y-[24px]">
-        <div class="space-y-[8px]">
-          <div class="flex space-x-[8px] items-center">
-            <em class="fa fa-circle-o"></em>
-            <h5 class="underline">Specialization</h5>
-          </div>
-          <div>
-            <ol class="text-[14px] space-y-[16px]">
-              <li class="md:flex items-center md:space-x-[16px]">
-                Stutern:<span class="course-1 ml-[8px]">UX/UI Design</span>
-                <p>September 2021 - February 2022</p>
-              </li>
-              <li class="md:flex items-center md:space-x-[16px]">
-                Coursera:<span class="course-2 ml-[8px]"
-                  >Visual Elements of User Interface Design</span
-                >
-                <p>August 2021 - September 2021</p>
-              </li>
-              <li class="md:flex items-center md:space-x-[16px]">
-                SideHustle:<span class="course-3 ml-[8px]">UX/UI Design</span>
-                <p>May 2021 - June 2021</p>
-              </li>
-            </ol>
-          </div>
-        </div>
-        <hr class="bg-white" />
-        <div class="space-y-[8px]">
-          <div class="flex space-x-[16px] items-center">
-            <em class="fa fa-circle-o"></em>
-            <h5 class="underline">Academics</h5>
-          </div>
-          <div>
-            <ol class="text-[14px] space-y-[16px]">
-              <li>
-                Lagos Sate University, Ojo, Lagos:
-                <span class="school-1 font-bold">B.S Computer Science</span>
-              </li>
-              <li>
-                Command Day Secondary School, NAFRC-Oshodi, Lagos:
-                <span class="school-2 ml-[8px] font-bold">SSLC</span>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-
-      <hr class="bg-white" />
-
-      <div class="space-y-[16px] md:space-y-[24px]">
+    <div class="space-y-[16px] md:space-y-[24px]">
+      <div class="space-y-[8px]">
         <div class="flex space-x-[16px] items-center">
-          <em class="fa fa-graduation-cap"></em>
-          <h4 class="font-bold md:text-[24px]">Other Certifications</h4>
+          <em class="fa fa-circle-o"></em>
+          <h5 class="underline text-[18px]">Work History</h5>
         </div>
 
+        <div class="text-[14px] space-y-[16px] ">
+          <div class="space-y-[8px] text-[18px]">
+            <div class="flex space-x-[16px] justify-between text-[18px]">
+              <p class="">Employer: <span class="font-bold ">Phareztech</span></p>
+              <p>January 2022 - Date</p>
+            </div>
+            <p>
+              Address:
+              <span class="font-bold"
+              >4, Ogunbadejo street, Bariga, Lagos</span
+              >
+            </p>
+            <p>Position: <span class="font-bold">Web Developer</span></p>
+            <div class="text-[18px]">
+              <h6 class="text-[18px]">Job Description:</h6>
+              <ul class="text-[18px]">
+                <li *ngFor="let phareztech of phareztechs">
+                  {{phareztech.job}}
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="bg-white" />
+
+          <div class="space-y-[8px]">
+            <div class="flex space-x-[16px] justify-between text-[18px]">
+              <p>
+                Employer: <span class="font-bold">Create Solutions</span>
+              </p>
+              <p>May 2021 - June 2021</p>
+            </div>
+            <p class="text-[18px]">
+              Address:
+              <span class="font-bold"
+              >12, Remi Sofoluwe street, Magodo Phase 2, Lagos</span
+              >
+            </p>
+            <p class="text-[18px]">
+              Position: <span class="font-bold">Front-end Developer</span>
+            </p>
+            <div class="text-[18px]">
+              <h6>Job Description:</h6>
+              <ul class="text-[18px]">
+                <li *ngFor="let createsolution of createsolutions">
+                  {{ createsolution.job }}
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="bg-white" />
+
+          <div class="space-y-[8px]">
+            <div class="flex space-x-[16px] justify-between text-[18px]">
+              <p>Employer: <span class="font-bold">Lepsta</span></p>
+              <p>June 2018 - December 2019</p>
+            </div>
+            <p class="text-[18px]">
+              Address:
+              <span class="font-bold"
+              >1 Bellingham St, Highveld, Centurion, 0157, South
+                  Africa</span
+              >
+            </p>
+            <p class="text-[18px]">
+              Position:
+              <span class="font-bold"
+              >Regional Manager East & West Africa</span
+              >
+            </p>
+            <div class="text-[18px]">
+              <p>Job job:</p>
+              <ul class="text-[18px]">
+                <li *ngFor="let lepsta of lepstas">{{ lepsta.job }}</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="bg-white" />
+          <div class="space-y-[8px]">
+            <div class="flex space-x-[16px] justify-between text-[18px]">
+              <p class="text-[18px]">
+                Employer: <span class="font-bold">Techville Nigeria</span>
+              </p>
+              <p>October 2017 - Date</p>
+            </div>
+            <p class="text-[18px]">
+              Address:
+              <span class="font-bold">48, Lagos Road, Ikorodu, Lagos</span>
+            </p>
+            <p class="text-[18px]">
+              Position:
+              <span class="font-bold"
+              >Web Designer & User Experience Engineer</span
+              >
+            </p>
+            <div>
+              <p class="text-[18px]">Job Description:</p>
+              <ul>
+                <li class="text-[18px]" *ngFor="let techville of techvilles">
+                  {{ techville.job }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class=" space-y-[16px] md:space-y-[24px] px-[16px] py-[16px]">
+    <div class="flex space-x-[16px] items-center">
+      <em class="fa fa-graduation-cap"></em>
+      <h4 class="font-bold text-[24px]">Education</h4>
+    </div>
+
+    <div class="space-y-[16px] md:space-y-[24px]">
+      <div class="space-y-[8px]">
+        <div class="flex space-x-[8px] items-center">
+          <em class="fa fa-circle-o"></em>
+          <h5 class="underline text-[18px]">Specialization</h5>
+        </div>
         <div>
-          <ol class="text-[14px] md:space-y-[16px] space-y-[8px]">
-            <li>
-              Google Ads & Video<span class="school-1 font-bold ml-[8px]"
-                >Google</span
-              >
+          <ol class=" space-y-[16px]">
+            <li class="text-[18px] md:flex items-center md:space-x-[16px]">
+              Stutern:<span class="course-1 ml-[8px] text-[18px]">UX/UI Design</span>
+              <p>September 2021 - February 2022</p>
             </li>
-            <li>
-              Mobile App Development (using Flutter)<span
-                class="school-2 ml-[8px] font-bold"
-                >Zuri Internship</span
-              >
+            <li class="md:flex items-center md:space-x-[16px] text-[18px]">
+              Coursera:<span class="course-2 ml-[8px]"
+            >Visual Elements of User Interface Design</span
+            >
+              <p class="text-[18px]">August 2021 - September 2021</p>
             </li>
-            <li>
-              Web UI/UX Development Including (HTML, CSS & WordPress)<span
-                class="school-2 ml-[8px] font-bold"
-                >CodeLagos</span
-              >
+            <li class="md:flex items-center md:space-x-[16px] text-[18px]">
+              SideHustle:<span class="course-3 ml-[8px]">UX/UI Design</span>
+              <p class="text-[18px]">May 2021 - June 2021</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <hr class="bg-white" />
+      <div class="space-y-[8px]">
+        <div class="flex space-x-[16px] items-center">
+          <em class="fa fa-circle-o"></em>
+          <h5 class="underline text-[18px]">Academics</h5>
+        </div>
+        <div>
+          <ol class="text-[14px] space-y-[16px]">
+            <li class="text-[18px]">
+              Lagos Sate University, Ojo, Lagos:
+              <span class="school-1 font-bold">B.S Computer Science</span>
+            </li>
+            <li class="text-[18px]">
+              Command Day Secondary School, NAFRC-Oshodi, Lagos:
+              <span class="school-2 ml-[8px] font-bold">SSLC</span>
             </li>
           </ol>
         </div>
       </div>
     </div>
 
-    <div
-      class="bg-purple-50 space-y-[16px] md:space-y-[24px] px-[16px] py-[16px]"
-    >
-      <div class="flex space-x-[16px] items-center">
-        <em class="fa fa-life-ring"></em>
-        <h4 class="font-bold md:text-[24px]">Work & Experience</h4>
+    <div class="space-y-[16px] md:space-y-[24px]  py-[16px]">
+      <div class="flex space-x-[8px] items-center">
+        <em class="fa fa-circle-o"></em>
+        <h5 class="underline text-[18px]">Proficiencies</h5>
+      </div>
+      <P
+      >AngularCLI UI Design & Development, Bootstrap, Tailwinds,
+        Typescript, JavaScript, CSS, HTML WordPress, Figma, NodeJS
+      </P>
+    </div>
+
+    <div class="space-y-[16px] md:space-y-[24px] text-[18px]">
+      <div class="flex space-x-[16px] items-center text-[18px]">
+        <em class="fa fa-graduation-cap"></em>
+        <h4 class="font-bold md:text-[24px]">Other Certifications</h4>
       </div>
 
-      <div class="space-y-[16px] md:space-y-[24px]">
-        <div class="space-y-[8px]">
-          <div class="flex space-x-[16px] items-center">
-            <em class="fa fa-circle-o"></em>
-            <h5 class="underline">Work History</h5>
-          </div>
-
-          <div class="text-[14px] space-y-[16px]">
-            <div class="space-y-[8px]">
-              <div class="flex space-x-[16px] justify-between">
-                <p>Employer: <span class="font-bold">Phareztech</span></p>
-                <p>January 2022 - Date</p>
-              </div>
-              <p>
-                Address:
-                <span class="font-bold"
-                  >4, Ogunbadejo street, Bariga, Lagos</span
-                >
-              </p>
-              <p>Position: <span class="font-bold">Web Developer</span></p>
-              <div>
-                <h6>Job Description:</h6>
-                <ul>
-                  <li *ngFor="let phareztech of phareztechs">
-                    {{phareztech.job}}
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <hr class="bg-white" />
-
-            <div class="space-y-[8px]">
-              <div class="flex space-x-[16px] justify-between">
-                <p>
-                  Employer: <span class="font-bold">Create Solutions</span>
-                </p>
-                <p>May 2021 - June 2021</p>
-              </div>
-              <p>
-                Address:
-                <span class="font-bold"
-                  >12, Remi Sofoluwe street, Magodo Phase 2, Lagos</span
-                >
-              </p>
-              <p>
-                Position: <span class="font-bold">Front-end Developer</span>
-              </p>
-              <div>
-                <h6>Job Description:</h6>
-                <ul >
-                  <li *ngFor="let createsolution of createsolutions">
-                    {{ createsolution.job }}
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <hr class="bg-white" />
-
-            <div class="space-y-[8px]">
-              <div class="flex space-x-[16px] justify-between">
-                <p>Employer: <span class="font-bold">Lepsta</span></p>
-                <p>June 2018 - December 2019</p>
-              </div>
-              <p>
-                Address:
-                <span class="font-bold"
-                  >1 Bellingham St, Highveld, Centurion, 0157, South
-                  Africa</span
-                >
-              </p>
-              <p>
-                Position:
-                <span class="font-bold"
-                  >Regional Manager East & West Africa</span
-                >
-              </p>
-              <div>
-                <p>Job job:</p>
-                <ul>
-                  <li *ngFor="let lepsta of lepstas">{{ lepsta.job }}</li>
-                </ul>
-              </div>
-            </div>
-
-            <hr class="bg-white" />
-            <div class="space-y-[8px]">
-              <div class="flex space-x-[16px] justify-between">
-                <p>
-                  Employer: <span class="font-bold">Techville Nigeria</span>
-                </p>
-                <p>October 2017 - Date</p>
-              </div>
-              <p>
-                Address:
-                <span class="font-bold">48, Lagos Road, Ikorodu, Lagos</span>
-              </p>
-              <p>
-                Position:
-                <span class="font-bold"
-                  >Web Designer & User Experience Engineer</span
-                >
-              </p>
-              <div>
-                <p>Job Description:</p>
-                <ul>
-                  <li *ngFor="let techville of techvilles">
-                    {{ techville.job }}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr class="bg-white" />
-
-        <div class="space-y-[8px]">
-          <div class="flex space-x-[8px] items-center">
-            <em class="fa fa-circle-o"></em>
-            <h5 class="underline">Proficiencies</h5>
-          </div>
-          <P
-            >AngularCLI UI Design & Development, Bootstrap, Tailwinds,
-            Typescript, JavaScript, CSS, HTML WordPress, Figma, NodeJS
-          </P>
-        </div>
-
-        <hr class="bg-white" />
-
-        <div class="space-y-[8px]">
-          <div class="flex space-x-[8px] items-center">
-            <em class="fa fa-circle-o"></em>
-            <h5 class="underline">Interests</h5>
-          </div>
-          <P>Entertainment & Arts, traveling, music.</P>
-        </div>
+      <div class="text-[18px]">
+        <ol class="text-[14px] md:space-y-[16px] space-y-[8px] text-[18px]">
+          <li class="text-[18px]">
+            Google Ads & Video<span class="school-1 font-bold ml-[8px]"
+          >Google</span
+          >
+          </li>
+          <li class="text-[18px]">
+            Mobile App Development (using Flutter)<span
+            class="school-2 ml-[8px] font-bold"
+          >Zuri Internship</span
+          >
+          </li>
+          <li class="text-[18px]">
+            Web UI/UX Development Including (HTML, CSS & WordPress)<span
+            class="school-2 ml-[8px] font-bold"
+          >CodeLagos</span
+          >
+          </li>
+        </ol>
       </div>
+    </div>
+
+    <div class="space-y-[8px] md:space-y-[24px] text-[18px] ">
+      <div class="flex space-x-[8px] items-center text-[18px]">
+        <em class="fa fa-circle-o"></em>
+        <h5 class="underline text-[18px]">Interests</h5>
+      </div>
+      <P>Entertainment & Arts, traveling, music.</P>
     </div>
   </div>
 </div>

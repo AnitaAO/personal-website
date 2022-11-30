@@ -1,11 +1,11 @@
-<div class="py-[40px] md:pt-[40px] md:pb-[80px]">
-  <h3 class="md:text-center py-[16px]">Contact Me</h3>
+<div class=" md:mt-[70px] mt-[50px] justify-center items-center">
+  <h3 class="md:text-center py-[16px] text-[18px] font-bold">Contact Me</h3>
   <div
-    class="md:flex justify-center items-center md:space-x-[132px] space-y-[24px]"
+    class="md:flex  items-center md:space-x-[132px] space-y-[24px]"
   >
-    <div class="my-address text-left md:space-y-[16px]">
-      <h4 class="md:text-[24px]">Lagos, Nigeria</h4>
-      <div class="space-y-[8px]">
+    <div class="my-address text-left md:space-y-[16px] items-center">
+      <h4 class="text-[18px]">Lagos, Nigeria</h4>
+      <div class="space-y-[8px] text-[18px]">
         <p>{{location.address}}</p>
         <p>{{location.email}}</p>
         <p>{{location.phone}}</p>
@@ -14,10 +14,10 @@
 
     <form #f="ngForm" (ngSubmit)="submit(f)">
       <!--name-->
-      <div class="field">
+      <div class="field ">
         <label for="name">Name</label><br />
         <input
-          class="border-2 p-[8px] container mx-auto"
+          class="border-2 p-[8px]"
           type="text"
           ngModel
           name="name"

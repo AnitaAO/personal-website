@@ -4,7 +4,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
-import { CaseStudyComponent } from './pages/case-study/case-study.component';
 
 
 const routes: Routes = [
@@ -30,10 +29,7 @@ const routes: Routes = [
     path: "portfolio",
     component: PortfolioComponent
   },
-  {
-    path: "case-study",
-    component: CaseStudyComponent
-  },
+
 ];
 
 @NgModule({

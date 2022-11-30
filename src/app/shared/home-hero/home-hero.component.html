@@ -1,28 +1,22 @@
-<div class="home-hero">
-  <div class=" hero-box container mx-auto md:justify-center items-center space-y-[16px] md:space-x-[24px] md:flex md:mt-[100px] mt-[70px] ">
-
-    <!--my headshot is here-->
-    <img class="object-center mx-auto w-auto md:w-[304px]" src="{{ imageUrl }}" alt="photograph">
-
-    <!--introducing myself-->
-    <div class="space-y-[16px] md:space-y-[24px]">
-      <div class="space-y-[8px] items-center pb-[24px]">
-        <h3 class="bg-clip-text text-transparent bg-gradient-to-r from-[#BB80AC] to-[#581C87]">Hi there!</h3>
-        <h4>I'm Amarachi,</h4>
-        <h4>a UI/UX Designer & Front-end Developer</h4>
-        <p>{{ text | summary:10 }}</p>
-        <div class="flex font-medium space-x-[8px] pointer">
-          <a href="/about">Read more
-            <em class=" fa fa-caret-right"></em>
-          </a>
-        </div>
+<div class="mx-auto w-fit justify-items-center items-center mb-[25px] md:mb-[40px]">
+  <div class="md:flex pt-[85px] md:pt-[150px] md:space-x-[25px] space-y-[16px] items-center">
+<!--    my portrait is here-->
+    <img class="items-center" src="{{ imageUrl }}" alt="photograph">
+    <div class="inline-block items-center px-[16px]">
+      <div>
+        <h1 class="bg-clip-text text-[24px] text-transparent bg-gradient-to-r from-[#c23fe2] to-[#1cd61c] ">Hi there!</h1>
+        <p class="text-[24px] pt-[16px]">I'm Amarachi,</p>
+        <p class="text-[18px] pt-[8px]">UI/UX Designer & Front-end Developer</p>
+        <p class="text-[18px] pt-[8px]">{{ text | summary:10 }}</p>
       </div>
-
-      <span class="outline py-[16px] pl-[16px] pr-[8px] text-#c4c4c4 rounded-[8px] shadow-md bg-white">
-        <input class="text-[16px] text-[#c4c4c4]" placeholder="Type your message" >
-        <button class="text-white px-[16px] bg-purple-900 py-[8px] rounded-[8px]">Send!</button>
-      </span>
+      <div class="pt-[8px]">
+        <a class="text-[18px]" routerLink="/about">Read more</a>
+        <span class="pl-[16px]"><em class=" fa fa-caret-right" ></em></span>
+      </div>
+      <div class="flex mt-[16px] px-[8px] py-[8px] text-#c4c4c4 space-x-[16px] w-[304px] rounded-[4px] shadow-md bg-white">
+        <input class="text-[16px] text-[#c4c4c4] border-hidden pl-[8px]" placeholder="Type your message" >
+        <button class="text-white px-[16px] bg-purple-900 py-[8px] rounded-[4px]">Send!</button>
+      </div>
     </div>
-
   </div>
 </div>

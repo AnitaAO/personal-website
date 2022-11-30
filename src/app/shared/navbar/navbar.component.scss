@@ -1,0 +1,44 @@
+.togglediv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobilebutton1, .mobilebutton2{
+  color: white;
+}
+
+
+@media screen and (max-width: 641px){
+  .btn_case-study{
+    display: none;
+  }
+}
+
+
+@media (min-width: 641px) {
+    nav a{
+        color:#F2F2F2;
+        font-weight:500;
+        position: relative;
+    }
+
+}
+
+header menu a:hover::after, header menu a.is-active::after{
+    content: '';
+    position: absolute;
+    background: #fff;
+    height: 4px;
+    left: 1px;
+    right: -3px;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+nav a:hover::after, .desktop-menu a.is-active::after{
+  background: white;
+  content: '';
+}

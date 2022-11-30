@@ -1,1 +1,6 @@
-<p>image-list works!</p>
+<div class=" justify-center items-center grid grid-cols-1 gap-[24px] md:grid-cols-3 " *ngIf="images.length > 0 ">
+  <div *ngFor="let image of images" class="items-center">
+    <img class="items-center mx-auto" src="{{image.imageSrc}}" alt="{{image.imageAlt}}">
+  </div>
+</div>
+

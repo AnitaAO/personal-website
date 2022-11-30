@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-features',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
+  }
+
+  downloadResume(){
+    const link = this.renderer.createElement('span');
+    link.setAttribute('target', '_self');
+    link.setAttribute('href', 'https://docs.google.com/document/d/1Tqz6VDT2IKEyY6Z0f24rltGvpcgl7sHtf3xtqX6L4g8/edit?usp=sharing');
+    link.setAttribute('download', `products.csv`);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   }
 
 }

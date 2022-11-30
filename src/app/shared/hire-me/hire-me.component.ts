@@ -14,7 +14,7 @@ export class HireMeComponent {
     },
     mentorship: {
       subtitle: "Mentorship",
-      description: ""
+      description: "I help tech enthusiasts and organizations build and improve their creative skill through one on one mentoring and in groups"
     },
     collaboration: {
       subtitle: "Collaboration",

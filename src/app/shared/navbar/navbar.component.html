@@ -1,0 +1,56 @@
+<header class="w-full mx-auto bg-purple-900 p-[24px] fixed justify-center">
+  <menu class="flex justify-between items-center bold">
+    <div class="text-[#fff]">
+      <!--      logo is here-->
+      <a class="flex flex-inline items-center space-x-[4px]">
+        <img routerLink="/home" class="w-[40px] h-[40px]" [src]="imageUrl" alt="logo">
+        <span routerLink="/home" class=" hover:text-[#fff] text-[18px] md:inline">Amarachi Ajah</span>
+      </a>
+    </div>
+    <nav >
+      <!--main menu is here-->
+      <div class="desktop-menu hidden md:inline-flex text-[18px] bold space-x-4">
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/about" routerLinkActive="active" >About</a>
+        <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+        <a routerLink="/contact-me" routerLinkActive="active">Contact me</a>
+      </div>
+    </nav>
+
+    <div class="flex flex-row items-center space-x-[16px]">
+
+      <!--mobile button active is here-->
+      <div (click)="toggleMenu()" *ngIf="!mobileMenu" class="mobilebutton1 md:hidden text-[24px]">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+
+      <!--mobile button close is here-->
+      <div (click)="toggleMenu()" *ngIf="mobileMenu" class="mobilebutton2 md:hidden text-[24px]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+
+      <a href="https://www.behance.net/amarachiajah" class=" btn_case-study border-2 bg-purple-50 text-[18px]
+            transition-300 px-4 py-2 rounded-[4px]">
+        <button class="button transition ease-in-out
+              delay-150 hover:-translate-py-2 hover:scale-110" type="button">Case study
+        </button>
+      </a>
+    </div>
+  </menu>
+
+  <!--mobile menu is here-->
+  <nav *ngIf="mobileMenu" class="mobile-menu md:hidden text-[#fff] text-[18px] bold shadow-md py-[8px] space-y-[4px] items-center">
+    <a routerLink="/home" class="block ">Home</a>
+    <a routerLink="/about" class="block ">About</a>
+    <a routerLink="/portfolio" class="block ">Portfolio</a>
+    <a routerLink="/contact-me" class="block ">Contact me</a>
+    <a href="https://www.behance.net/amarachiajah" class="block py-[8px]"><button type="button" class="border-2 rounded-xl px-4 text-center">Case study</button></a>
+  </nav>
+</header>
+
+
+

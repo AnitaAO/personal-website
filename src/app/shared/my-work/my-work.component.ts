@@ -1,5 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {IHomeWorkData} from "../../pages/home/home-data";
+import {ImageListComponent} from "../image-list/image-list.component";
+
+type Images ={
+  id: number;
+  imageSrc: string;
+  imageAlt: string;
+
+}
 
 @Component({
   selector: 'app-my-work',
@@ -7,7 +14,7 @@ import {IHomeWorkData} from "../../pages/home/home-data";
   styleUrls: ['./my-work.component.scss']
 })
 export class MyWorkComponent implements OnInit {
- @Input() works: IHomeWorkData[] = []
+  @Input()images:Images[]=[];
 
 
   constructor() { }

@@ -1,52 +1,38 @@
-<div class="px-[16px]">
-  <div class="container max-w-6xl mx-auto m-[24px] md:mb-[40px] py-[24px] md:py-[40px] space-y-[8px]">
+<div class="md:max-w-5xl md:mx-auto justify-items-center bg-[#fff] p-[16px] mt-[50px] md:mt-[70px]">
 
-    <h3 class="font-bold md:text-center">{{hire.title}}</h3>
+    <h1 class="text-[24px] md:text-center font-bold ]">{{hire.title}}</h1>
 
-    <div class="items-center space-y-[16px] md:p-[16px]">
-      <div>
-        <div class="flex space-x-[8px] md:space-x-[16px]">
+<!--    <div class="items-center space-y-[16px] md:p-[16px]  ">-->
+    <div class="md:justify-between items-center pt-[16px] ">
+      <div class="space-y-[8px] items-center">
+        <div class="flex space-x-[8px]">
           <em class="fa fa-graduation-cap"></em>
-          <h5 class="font-bold">{{hire.visual.subtitle}}</h5>
-        </div>
-
-        <div class="flex space-x-[8px] md:space-x-[16px] relative">
-          <div>
-            <span class="line-1a rotate-90 absolute"></span>
-            <span class="line-1b rotate-90 absolute md:hidden"></span>
+<!--          <span class="divide-x-12 divide-light-theme-primary w-11/12"></span>-->
+          <div class="text-[18px]">
+            <h5 class=" font-bold">{{hire.visual.subtitle}}</h5>
+            <p>{{hire.visual.description}}</p>
           </div>
-          <p class="pl-[18px]">{{hire.visual.description}}</p>
         </div>
-      </div>
 
-      <div>
-        <div class="flex space-x-[8px] md:space-x-[16px]">
+        <div class="flex space-x-[8px]">
           <em class="fa fa-graduation-cap"></em>
-          <h5 class="font-bold">{{hire.mentorship.subtitle}}</h5>
-        </div>
-
-        <div class="flex space-x-[8px] md:space-x-[16px] relative">
-          <span class="line-2a rotate-90 absolute"></span>
-          <span class="line-2b rotate-90 absolute md:hidden"></span>
-          <p class="pl-[18px]"> {{hire.mentorship.description }} </p>
-        </div>
-      </div>
-
-      <div>
-        <div class="flex space-x-[8px] md:space-x-[16px]">
-          <em class="fa fa-graduation-cap"></em>
-          <h5 class=" font-bold">{{hire.collaboration.subtitle}}</h5>
-        </div>
-
-        <div class="p-collabo flex space-x-[8px] md:space-x-[16px] relative">
-          <div>
-            <span class="line-3a rotate-90 absolute"></span>
-            <span class="line-3b rotate-90 absolute md:hidden"></span>
+          <!--          <span class="divide-y h-[40px]"></span>-->
+          <div class="text-[18px]">
+            <h5 class=" font-bold">{{hire.mentorship.subtitle}}</h5>
+            <p>{{hire.mentorship.description}}</p>
           </div>
-          <p class="pl-[18px]">{{hire.collaboration.description}}</p>
+        </div>
+
+        <div class="flex space-x-[8px]">
+          <em class="fa fa-graduation-cap"></em>
+          <!--          <span class="divide-y h-[40px]"></span>-->
+          <div class="text-[18px]">
+            <h5 class=" font-bold">{{hire.collaboration.subtitle}}</h5>
+            <p>{{hire.collaboration.description}}</p>
+          </div>
         </div>
       </div>
     </div>
-
-  </div>
 </div>
+
+

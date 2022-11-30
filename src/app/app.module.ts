@@ -6,7 +6,6 @@ import { FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
-import { CaseStudyComponent } from './pages/case-study/case-study.component';
 import { AboutHeroComponent } from './shared/about-hero/about-hero.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import { ContactFormComponent } from './shared/contact-form/contact-form.component';
@@ -21,17 +20,10 @@ import { HomeServicesComponent } from './shared/home-services/home-services.comp
 import { PortfolioHeroComponent } from './shared/portfolio-hero/portfolio-hero.component';
 import { ResumeComponent } from './shared/resume/resume.component';
 import { SkillSetsComponent } from './shared/skill-sets/skill-sets.component';
-
-import { ReactiveFormsModule } from '@angular/forms';
 import {MyWorkComponent} from "./shared/my-work/my-work.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavigationComponent } from './shared/navigation/navigation.component';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ImageListComponent } from './shared/image-list/image-list.component';
 
 
 
@@ -39,7 +31,6 @@ import { MatListModule } from '@angular/material/list';
   declarations: [
     AppComponent,
     AboutComponent,
-    CaseStudyComponent,
     AboutHeroComponent,
     ContactMeComponent,
     ContactFormComponent,
@@ -55,7 +46,8 @@ import { MatListModule } from '@angular/material/list';
     ResumeComponent,
     SkillSetsComponent,
     MyWorkComponent,
-    NavigationComponent,
+    NavbarComponent,
+    ImageListComponent,
   ],
 
   imports: [
@@ -64,13 +56,6 @@ import { MatListModule } from '@angular/material/list';
     FormsModule,
     HomeHeroModule,
     BrowserAnimationsModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
