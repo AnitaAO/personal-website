@@ -4,7 +4,7 @@
     background-color: #bbb;
     float: left;
     margin-left: -15px;
-    margin-top: 16px; 
+    margin-top: 16px;
   }
 
   .line-1b{
@@ -24,7 +24,7 @@
     float: left;
     margin-left: -22px;
     margin-top: 22px;
- 
+
   }
 
 
@@ -35,7 +35,7 @@
 //     float: left;
 //     margin-left: -28px;
 //     margin-top: 90px;
- 
+
 //   }
 
 .line-3a{
@@ -45,7 +45,7 @@
     float: left;
     margin-left: -14px;
     margin-top: 17px;
- 
+
   }
 
   .line-3b{
@@ -55,5 +55,11 @@
     float: left;
     margin-left: -14px;
     margin-top: 70px;
- 
+
   }
+
+@media only screen and (max-width: 640px ){
+  .hire_image {
+    display: none;
+  }
+}

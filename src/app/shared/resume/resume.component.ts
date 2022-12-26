@@ -8,19 +8,22 @@ import { Component } from '@angular/core';
 export class ResumeComponent  {
   constructor() { }
 
+  Prunedges = [
+    {id: 1, job: "Modified HTML, CSS, Javascript, and Typescript to optimize the page’s performance for faster loading and browsing"},
+    {id: 2, job: "Utilized strategic engineering procedures to maintain and improve the company’s point of sales system features built through Angular, React, Redux, JQuery, DotNet, Python, and C-Sharp languages."},
+    {id: 3, job: "Designed and executed a brand-new retail management solution, ‘Boosta,’ along with a team to help small and medium enterprises scale."},
+  ];
+
   phareztechs = [
-    {id: 1, job: "Write reusable codes for Redeemed Christian Church of God, Masha-Surulere website"},
-    {id: 2, job: "Write reusable components for Messaging Fintech Services Application"},
-    {id: 3, job: "Create new modules for Redeemed Christian Church of God, Masha-Surulere website"},
-    {id: 4, job: "Create new modules for Messaging Fintech Services"},
-    {id: 5, job: "Application Work with UI/UX team to handle new projects"},
-    {id: 6, job: "Consume API endpoints for app usability & functionality"}
+    {id: 1, job: "Provided prompt solutions and proactive troubleshooting support that swiftly resolved subtle issues as a junior developer to the software engineering team."},
+    {id: 2, job: "Determined areas of improvement by consistently reviewing bugs/fixes/codes."},
+    {id: 3, job: "Work with UI/UX team to handle new projects."},
   ];
 
   createsolutions = [
     { id: 1, job: "Determine the structure and design of web pages" },
     { id: 2, job: "Developing features to enhance the user experience and accessibility" },
-    { id: 3, job: "Striking a balance between functional and aesthetics from designs Ensuring web design is optimized for smartphones"},
+    { id: 3, job: "Striking a balance between functional and aesthetics from designs, ensuring web design is optimized for smartphones"},
     { id: 4, job: "Maintaining brand consistency throughout the design"}
   ];
 
@@ -36,7 +39,7 @@ export class ResumeComponent  {
   ];
 
   techvilles = [
-    {id: 1, job: "-Create Figma files for visual layout of iOS, Android and web pages Graphics design, UI and UX development into customer specifications"},
+    {id: 1, job: "Create Figma files for visual layout of iOS, Android and web pages Graphics design, UI and UX development into customer specifications"},
     {id: 2, job: "Come up with simple logo designs where necessary"},
     {id: 3, job: "Implement and maintain high-quality SEO policies and incorporate them with content produced for the website"},
     {id: 4, job: "Implement and maintain high-quality SEO policies and incorporate them with content produced for the website"},

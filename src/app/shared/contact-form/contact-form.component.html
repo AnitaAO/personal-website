@@ -1,9 +1,9 @@
-<div class=" md:mt-[70px] mt-[50px] justify-center items-center">
-  <h3 class="md:text-center py-[16px] text-[18px] font-bold">Contact Me</h3>
+<div class=" md:pt-[70px] pt-[40px] max-w-5xl mx-auto justify-center items-center">
+  <h3 class="text-center text-[18px] font-bold">Contact Me</h3>
   <div
-    class="md:flex  items-center md:space-x-[132px] space-y-[24px]"
+    class="grid grid-cols-1 md:grid-cols-2 container mx-auto pt-[16px] gap-[24px] "
   >
-    <div class="my-address text-left md:space-y-[16px] items-center">
+    <div class="my-address items-center">
       <h4 class="text-[18px]">Lagos, Nigeria</h4>
       <div class="space-y-[8px] text-[18px]">
         <p>{{location.address}}</p>
@@ -14,10 +14,10 @@
 
     <form #f="ngForm" (ngSubmit)="submit(f)">
       <!--name-->
-      <div class="field ">
+      <div class="field pt-[16px] container mx-auto">
         <label for="name">Name</label><br />
         <input
-          class="border-2 p-[8px]"
+          class="border-2 p-[8px] container mx-auto"
           type="text"
           ngModel
           name="name"
@@ -44,28 +44,28 @@
         />
         <div *ngIf="email.touched && !email.valid">Email is required</div>
         <br /><br />
-      </div>
 
-      <!--message-->
+        <!--message-->
         <textarea
           ngModel
+          class="border-2 p-[8px] container mx-auto"
           name="message"
           required
           type="textarea"
-          class="border-2 p-[8px] mx-auto container"
           placeholder="Type your message"
           #textarea="ngModel"
         ></textarea>
         <div *ngIf="textarea.touched && !textarea.valid">Your message cannot be empty</div>
         <br /><br />
 
-      <!--submit button-->
-      <button
-        class="button bg-purple-900 text-white p-[8px] container mx-auto"
-        type="submit"
-      >
-        Send!
-      </button>
+        <!--submit button-->
+        <button
+          class="button bg-purple-900 text-white p-[8px] container mx-auto"
+          type="submit"
+        >
+          Send!
+        </button>
+      </div>
     </form>
   </div>
 </div>

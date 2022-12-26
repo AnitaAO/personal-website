@@ -1,9 +1,15 @@
-.vl {
-  border-left: 2px solid grey;
-  height: 135px;
-  position: absolute;
-  left: 48%;
-  margin-left: 0px;
+//.vl {
+//  border-left: 2px solid grey;
+//  height: 135px;
+//  position: absolute;
+//  left: 48%;
+//  margin-left: 0px;
+//
+//  top: 133%;
+//}
 
-  top: 133%;
+.service_divider{
+  @media only screen and (max-width: 640px) {
+    display: none;
+  }
 }

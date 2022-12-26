@@ -24,6 +24,7 @@ import {MyWorkComponent} from "./shared/my-work/my-work.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ImageListComponent } from './shared/image-list/image-list.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -48,6 +49,7 @@ import { ImageListComponent } from './shared/image-list/image-list.component';
     MyWorkComponent,
     NavbarComponent,
     ImageListComponent,
+    PageNotFoundComponent,
   ],
 
   imports: [

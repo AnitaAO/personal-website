@@ -1,7 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 // import {IPortfolioImageList} from "../../pages/portfolio/portfolioData";
 
-
+type Images = {
+  id: number,
+  imageSrc: string,
+  imageAlt: string
+}
 
 // const IMAGES: IPortfolioImageList[] = [
 //   {
@@ -49,9 +53,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioHeroComponent implements OnInit {
   // images:IPortfolioImageList[]= IMAGES;
+  images: Images[] = [];
+
+  @Output() selectedAll = new EventEmitter<Images>();
+  @Output() selectedDesign = new EventEmitter<Images>();
+  @Output() selectedDevelopment = new EventEmitter<Images>();
 
   constructor() { }
 
   ngOnInit(): void {
+    this.images = [
+      { id: 1, imageSrc: 'assets/svgs/sabihelpdesktop1.svg', imageAlt: 'photo'},
+      { id: 2, imageSrc: 'assets/svgs/sabihelpdesktop2.svg', imageAlt: 'photo'},
+      { id: 3, imageSrc: 'assets/svgs/senditdesktop1.svg', imageAlt: 'photo'},
+      { id: 4, imageSrc: 'assets/svgs/senditmobile1.svg', imageAlt: 'photo'},
+      { id: 5, imageSrc: 'assets/svgs/timbredesktop1.svg', imageAlt: 'photo'},
+      { id: 6, imageSrc: 'assets/svgs/restaurantguidedesktop1.svg', imageAlt: 'photo'},
+    ]
   }
+
+  selectAll(images: any){
+    this.selectedAll.emit(images)
+  };
+
+  selectDesign(images: any){
+    this.selectedDesign.emit(images)
+  };
+
+  selectDevelopment(images: any){
+    this.selectedDevelopment.emit(images)
+  };
 }
