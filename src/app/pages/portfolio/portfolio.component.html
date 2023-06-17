@@ -1,5 +1,9 @@
 <div class=" mx-auto container">
-  <app-portfolio-hero></app-portfolio-hero>
-  <app-image-list></app-image-list>
+  <app-portfolio-hero
+    (selectAll)="selectedAll($event)"
+    (selectDesign)="selectedDesign($event)"
+    (selectDevelopment)="selectedDevelopment($event)"
+  >
+  </app-portfolio-hero>
   <app-contact-form></app-contact-form>
 </div>

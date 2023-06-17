@@ -25,6 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ImageListComponent } from './shared/image-list/image-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DesignCardsComponent } from './shared/cards/design-cards/design-cards.component';
+import { DeveloperCardsComponent } from './shared/cards/developer-cards/developer-cards.component';
 
 
 
@@ -50,6 +52,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     NavbarComponent,
     ImageListComponent,
     PageNotFoundComponent,
+    DesignCardsComponent,
+    DeveloperCardsComponent,
   ],
 
   imports: [

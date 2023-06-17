@@ -5,27 +5,28 @@
       <img class="h-[24px] w-[24px]" src="../../../assets/svgs/portfolioicon.svg" alt="">
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-[16px] w-fit  mx-auto items-center text-[18px] pt-[24px] md:pt-[40px]">
-      <Button class=" border-2 rounded-2xl border-grey-200 py-1 px-4" type="button" (click)="selectAll($event)">All</Button>
-      <Button class=" border-2 rounded-2xl border-grey-200 py-1 px-4" type="button" (click)="selectDesign($event)">UX/UI Design</Button>
-      <Button class=" border-2 rounded-2xl border-grey-200 py-1 px-4" type="button" (click)="selectDevelopment($event)">Web Development</Button>
+      <Button class=" border-2 rounded-2xl border-grey-200 py-1 px-4" type="button" (click)="selectedAll()">All</Button>
+      <Button class=" border-2 rounded-2xl border-grey-200 py-1 px-4" type="button" (click)="selectedDesign()">UX/UI Design</Button>
+      <Button class=" border-2 rounded-2xl border-grey-200 py-1 px-4" type="button" (click)="selectedDevelopment()">Web Development</Button>
     </div>
   </div>
 
-  <div class=" justify-center items-center grid grid-cols-1 gap-[24px] md:grid-cols-3 pt-[40px]" *ngIf="images.length > 0 ">
+  <div class=" justify-center items-center grid grid-cols-1 gap-[24px] md:grid-cols-3 pt-[40px]" *ngIf="images.length > 0 && selectAll">
     <div *ngFor="let image of images" class="items-center">
       <img class="items-center mx-auto" src="{{image.imageSrc}}" alt="{{image.imageAlt}}">
     </div>
   </div>
 
-  <div class=" justify-center items-center grid grid-cols-1 gap-[24px] md:grid-cols-3 " *ngIf="images.length > 0">
+  <div class=" justify-center items-center grid grid-cols-1 gap-[24px] md:grid-cols-3 pt-[40px]" *ngIf="images.length > 0 && selectDesign">
     <div *ngFor="let image of images | slice: 0: 3 " class="items-center">
       <img class="items-center mx-auto" src="{{image.imageSrc}}" alt="{{image.imageAlt}}">
     </div>
   </div>
 
-  <div class=" justify-center items-center grid grid-cols-1 gap-[24px] md:grid-cols-3 " *ngIf="images.length > 0 ">
+  <div class=" justify-center items-center grid grid-cols-1 gap-[24px] md:grid-cols-3 pt-[40px]" *ngIf="images.length > 0 && selectDevelopment">
     <div *ngFor="let image of images | slice: 3: 6" class="items-center">
       <img class="items-center mx-auto" src="{{image.imageSrc}}" alt="{{image.imageAlt}}">
+      <div class="card-body"></div>
     </div>
   </div>
 </div>
